@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kebite</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/svg+xml" href="https://www.svgrepo.com/show/365315/digital.svg">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2h6A6J8yQhL22C5+0/E588+5n+6F5hF8+586E8+5/H/Q7N+6C8/z5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-M9KH0y+Y2dfG8BVYt+0Ivh1rN3sI7u0ZlS9nXgWJf8Z5gkNwqKqzYOYpKhI6JmZcnBzYULkQnK5+0lP5kQm6+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="lg:flex items-center justify-between py-2 max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <img src="images/logo.svg" alt="Logo" class="h-6">
+                <div>
+                    <button id="cart-mobile" class="text-md font-medium text-white lg:hidden px-4 py-2 font-inter">
+                        <i class="fas fa-shopping-cart inline-block mr-2"></i>cart
+                    </button>
+                    <!-- Mobile menu toggle button -->
+                    <button id="open-menu-btn"
+                        class="bg-white text-sm openbtn font-medium text-black px-4 py-2 font-inter lg:hidden ">
+                        <i class="fas fa-bars inline-block w-6"></i>
+                    </button>
+                </div>
+            </div>
+
+            <ul
+                class="lg:flex hidden menulist lg:space-y-0 absolute lg:relative bg-[#101010]  lg:border-0 border-t w-full lg:w-auto  z-10 space-y-4  inter pl-2 lg:my-0 my-4 space-x-12">
+                <li><a href="#about" class="text-white text-sm">About Us</a></li>
+                <li><a href="#services" class="text-white text-sm">Services</a></li>
+                <li><a href="#projects" class="text-white text-sm">Projects</a></li>
+                <li><a href="#projects" class="text-white text-sm">Pricing</a></li>
+                <li><a href="#projects" class="text-white text-sm">Pages</a></li>
+                <li><a href="#contact"
+                        class="bg-white text-sm  font-medium text-black px-4 py-2 font-inter lg:hidden ">Contact <span
+                            class="ml-2">→</span></a>
+                </li>
+            </ul>
+            <div class="flex items-center space-x-4">
+
+                <!-- Replaced local cart icon with Font Awesome -->
+                <button class="text-md font-medium text-white hidden lg:block px-4 py-2 font-inter">
+                    <i class="fas fa-shopping-cart inline-block mr-2"></i>cart
+                </button>
+                <!-- Contract Button with a simple arrow emoji -->
+                <button
+                    class="bg-white text-sm contract-btn font-medium text-black px-4 py-2 hidden lg:block  hover:bg-[#4C4C4C] hover:text-white transition-colors">
+                    Contract <span class="ml-2">→</span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="max-w-7xl mx-auto px-4 pt-2 mt-5">
+            <h1 data-aos="fade-right" data-aos-offset="600" data-aos-easing="ease-in-sine"
+                class="text-7xl md:text-[160px] lg:text-[180px] poppins-medium font-poppins font-bold text-white leading-none uppercase">
+                We’re
+            </h1>
+            <h1 data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine"
+                class="text-7xl md:text-[160px] lg:text-[180px] poppins-medium font-poppins font-bold text-white text-end leading-none uppercase">
+                Creative
+            </h1>
+        </div>
+
+        <div data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-sine"
+            class="max-w-7xl mx-auto px-4 pt-2 mt-5 flex flex-col md:flex-row justify-between  items-center space-y-6 lg:space-y-0">
+            <ul class="uppercase min-w-32">
+                <li class="text-white text-md poppins-semibold font-bold"><span class="text-[#9F9F9F]">Grow </span>Your
+                </li>
+                <li class="text-white text-md poppins-semibold font-bold">Brand <span class="text-[#9F9F9F]">Beyond
+                    </span> </li>
+                <li class="text-white text-md poppins-semibold font-bold">Boundaries</li>
+            </ul>
+            <div class="max-w-2xl">
+                <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c694fd734c21bf577a9ba0_d88b3547ac131cf9d556987386a90378_thumb-1.webp"
+                    alt="">
+            </div>
+
+            <ul class="uppercase min-w-32">
+                <li class="text-white text-md poppins-semibold font-bold"><span class="text-[#9F9F9F]">Working </span>
+                </li>
+                <li class="text-white text-md poppins-semibold font-bold">Across The </li>
+                <li class="text-white text-md poppins-semibold font-bold"><span class="text-[#9F9F9F]">Globe </span>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="px-4 pt-10">
+            <h1
+                class="text-7xl md:text-[160px] lg:text-[170px] poppins-medium py-4 tracking-tighter font-poppins space-x-0 text-center font-bold text-white  leading-none uppercase">
+                Design Studio
+            </h1>
+
+        </div>
+    </header>
+
+    <main class="bg-[#F9F9F9]">
+
+        <!-- About Our Agency Section -->
+        <section class="container mx-auto px-4 max-w-4xl py-8 md:py-10 md:pt-20 text-center hero-gradient rounded-lg ">
+            <span class="text-sm font-medium text-gray-500 tracking-widest uppercase">ABOUT OUR AGENCY</span>
+            <h1 data-aos="fade-up" data-aos-offset="400"
+                class="text-4xl md:text-4xl lg:text-6xl inter font-extrabold text-[#0C0407] my-4 leading-14 ">
+                <span class="text-[#9D9A9B]"> Designing unique</span> solutions to help brands stand out & thrive in a
+                competitive <span class="text-[#9D9A9B]">digital landscape</span>
+            </h1>
+        </section>
+
+        <!-- Detailed About Section -->
+        <section class="max-w-7xl mx-auto px-4  md:py-8">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Image column -->
+                <div data-aos="fade-right" data-aos-offset="400" class="w-full lg:max-w-xl overflow-hidden ">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6989be5817084b84deee7_thumb-2-p-2000.webp"
+                        alt="Team working together" class="w-full h-auto object-cover">
+                </div>
+
+
+                <!-- Content column -->
+                <div data-aos="fade-up" data-aos-offset="400" data-aos="fade-up" data-aos-offset="400"
+                    class="w-full lg:w-1/2 inter text-left h-full flex flex-col  justify-between">
+                    <p class="text-base md:text-lg my-auto text-gray-600 mb-16">
+                        We specialize in crafting unique solutions that help brands make their mark.
+                        By combining creativity with strategy, we deliver designs that stand out in
+                        the digital landscape and resonate with audiences, ensuring your brand.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16">
+                        <div>
+                            <p class="text-4xl md:text-5xl font-abold text-gray-800">200+</p>
+                            <p class="text-base text-gray-500">Satisfied Clients</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl md:text-5xl font-abold text-gray-800">600+</p>
+                            <p class="text-base text-gray-500">Projects done</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl md:text-5xl font-abold text-gray-800">200M+</p>
+                            <p class="text-base text-gray-500">Total Revenue</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center lg:text-left">
+                        <button
+                            class="px-6 py-2 bg-gray-800 text-white font-bold shadow-lg hover:bg-gray-700 transition-colors">
+                            About us →
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Enhancing Brands Section -->
+        <section class="container mx-auto px-4 py-16 md:py-24 text-center">
+            <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                class="max-w-7xl mx-auto px-4 pt-2 mt-5 flex flex-col md:flex-row justify-between  items-center space-y-6 lg:space-y-0">
+                <ul class="uppercase min-w-32">
+                    <li class="text-[#282123] text-md poppins-semibold font-bold "><span
+                            class="text-[#9D9D9D] poppins-medium">We create
+                        </span>immersive
+                    </li>
+                    <li class="text-[#282123] text-md poppins-medium font-bold">campaigns that leave </li>
+                    <li class="text-[#282123] text-md poppins-medium font-bold">a lasting <span
+                            class="text-[#9D9D9D]">influence</span></li>
+                </ul>
+                <div class="max-w-4xl">
+                    <video src="/images/team.mp4" autoplay muted loop></video>
+                </div>
+
+                <ul class="uppercase min-w-32">
+                    <li class="text-[#282123] text-md poppins-medium font-bold">Changing the</span>
+                    </li>
+                    <li class="text-[#282123] text-md poppins-medium font-bold"><span class="text-[#9D9D9D]">Online
+                            Presence</span> </li>
+                    <li class="text-[#282123] text-md poppins-medium font-bold">of Brands
+                    </li>
+
+
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="bg-[#101010] text-white px-4 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+                <!-- Left Side (Sticky Content) -->
+                <div class="md:sticky md:top-20 self-start">
+                    <span class="text-sm font-medium text-gray-400 tracking-widest uppercase">OUR SERVICES</span>
+                    <h2 class="text-4xl md:text-5xl lg:text-7xl poppins-semibold font-extrabold text-white my-4">
+                        UNCOVER OUR <br>
+                        <span class="text-gray-500">CAPABILITIES</span>
+                    </h2>
+                    <p class="text-base text-gray-400 max-w-2xl mb-12">
+                        Inventore numquam colo. Recusandae debilito defessus coaegresco comitibo accendo. Magnam non
+                        antiquis cinis bos arguo ancilla.
+                    </p>
+                </div>
+
+                <!-- Right Side (Services List) -->
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Service Item 1 -->
+                    <div data-aos="fade-up" class="flex items-start gap-4 max-w-[500px] p-6 border-b border-gray-800">
+                        <div class="flex-shrink-0">
+                            <svg width="38" height="38" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                <path
+                                    d="M10.125 2.125a2.5 2.5 0 012.5 2.5v1.25a2.5 2.5 0 01-2.5 2.5h-1.25a2.5 2.5 0 01-2.5-2.5V4.625a2.5 2.5 0 012.5-2.5h1.25zM15.125 10.125a2.5 2.5 0 012.5 2.5v1.25a2.5 2.5 0 01-2.5 2.5h-1.25a2.5 2.5 0 01-2.5-2.5v-1.25a2.5 2.5 0 012.5-2.5h1.25zM20.125 18.125a2.5 2.5 0 012.5 2.5v1.25a2.5 2.5 0 01-2.5 2.5h-1.25a2.5 2.5 0 01-2.5-2.5v-1.25a2.5 2.5 0 012.5-2.5h1.25z"
+                                    fill="white" />
+                                <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-gray-400">
+                                Developing impactful logos and cohesive visual identities that resonate with your target
+                                audience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 2 -->
+                    <div data-aos="fade-up" class="flex items-start gap-4 p-6 max-w-[500px] border-b border-gray-800">
+                        <div class="flex-shrink-0">
+                            <svg width="38" height="38" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                <path
+                                    d="M4 18V6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2zM4 6h16M4 14h16"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">Web Design</h3>
+                            <p class="text-gray-400">
+                                Crafting visually stunning, user-centered websites tailored to your brand and business
+                                goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 3 -->
+                    <div data-aos="fade-up" class="flex items-start gap-4 p-6 max-w-[500px] border-b border-gray-800">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                            <svg width="30" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                <path d="M16 18l-6 6M10 18l6 6M2 12h20M12 2v20M20 12l-6-6M4 12l6 6M12 20v2M12 4V2"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- Content -->
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">Web Development</h3>
+                            <p class="text-gray-400">
+                                Building websites optimized for all devices, from desktop to mobile. Ongoing support and
+                                updates to ensure your website remains secure, fast, and up-to-date with trends.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 4 -->
+                    <div data-aos="fade-up" class="flex items-start gap-4 p-6 max-w-[500px] border-b border-gray-800">
+                        <!-- Icon -->
+                        <div class="flex-shrink-0">
+                            <svg width="30" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+                                <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 6v6l4 2" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- Content -->
+                        <div>
+                            <h3 class="text-4xl font-bold mb-2">Digital Marketing</h3>
+                            <p class="text-gray-400">
+                                Optimizing your website and content to rank higher on search engines and attract organic
+                                traffic. Designing and executing personalized email campaigns to conversions.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Add other service items same way -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Recent Projects Section -->
+        <section class="max-w-7xl mx-auto px-4 py-16 md:py-24">
+            <span class="text-sm font-medium text-gray-500 tracking-widest uppercase text-center block">RECENT
+                PROJECTS</span>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl poppins-semibold font-extrabold text-gray-800 my-4 text-center">
+                SHOWCASE OF <br><span class="text-gray-500">EXCELLENCE</span>
+            </h2>
+            <p class="text-base text-gray-600 max-w-2xl mx-auto text-center mb-12">
+                Ullam ipsam cenaculum carbo causa umerus vulnius deripio ut. Acerbitas tumultus atrox tumultus usus.
+                Vinum curia supplanto.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+
+
+                <!-- Project Item 1 -->
+                <div class="text-start group">
+                    <!-- Image wrapper relative করা হলো -->
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980defc6abe066dfabeaa_banner-5-p-2000.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <!-- Overlay button -->
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Content -->
+                    <h3 class="text-2xl font-bold text-gray-800">Boldstream</h3>
+                    <p class="text-gray-500">
+                        Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
+                        compono agnosco.
+                    </p>
+                </div>
+                <!-- Project Item 1 -->
+                <div class="text-start group">
+                    <!-- Image wrapper relative করা হলো -->
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980defc6abe066dfabeaa_banner-5-p-2000.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <!-- Overlay button -->
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Content -->
+                    <h3 class="text-2xl font-bold text-gray-800">Boldstream</h3>
+                    <p class="text-gray-500">
+                        Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
+                        compono agnosco.
+                    </p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Our Client Reviews Section -->
+        <section class="text-center bg-[#101010] relative overflow-hidden p-8">
+            <div class="flex p-4 justify-between items-end mt-2 max-w-7xl mx-auto">
+                <div class="text-left md:text-left lg:pl-4 pt-10">
+                    <span class="text-xs tracking-widest inter p-2 text-white uppercase">Testimonial</span>
+                    <h2
+                        class="lg:text-4xl text-2xl md:text-5xl lg:text-7xl poppins-semibold font-extrabold text-white my-4 uppercase">
+                        <span class="text-[#707070]">OUR CLIENT</span> <br> REVIEWS
+                    </h2>
+                </div>
+                <div class="flex space-x-4 mt-4 md:mt-0 hidden md:flex">
+                    <button id="prevBtn" class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="nextBtn" class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slider Container -->
+            <div id="testimonialSlider"
+                class="mt-8 flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-4  ">
+
+                <!-- Testimonial 1 -->
+                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-sm snap-center">
+                    <h4 class="font-bold text-xl mb-2">A True Extension of Our Business and Vision</h4>
+                    <p class="text-sm text-gray-400 mb-4">
+                        "The team went above and beyond to deliver a website that exceeded our expectations."
+                    </p>
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full object-cover"
+                            src="https://placehold.co/100x100/333/fff?text=MB" alt="Michael Brown">
+                        <div class="ml-3">
+                            <p class="text-sm font-semibold">Michael Brown</p>
+                            <p class="text-xs text-gray-400">Senior Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-sm snap-center">
+                    <h4 class="font-bold text-xl mb-2">Seamless Collaboration that Exceeds Expectations</h4>
+                    <p class="text-sm text-gray-400 mb-4">
+                        "Their team became an integral extension of our business. They immersed in our brand."
+                    </p>
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full object-cover"
+                            src="https://placehold.co/100x100/333/fff?text=SD" alt="Sarah Davis">
+                        <div class="ml-3">
+                            <p class="text-sm font-semibold">Sarah Davis</p>
+                            <p class="text-xs text-gray-400">Robotics Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-sm snap-center">
+                    <h4 class="font-bold text-xl mb-2">An Effortless Experience</h4>
+                    <p class="text-sm text-gray-400 mb-4">
+                        "The whole process was smooth and stress-free. Great communication all along."
+                    </p>
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full object-cover"
+                            src="https://placehold.co/100x100/333/fff?text=JW" alt="James Wilson">
+                        <div class="ml-3">
+                            <p class="text-sm font-semibold">James Wilson</p>
+                            <p class="text-xs text-gray-400">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-sm snap-center">
+                    <h4 class="font-bold text-xl mb-2">Communication is Key</h4>
+                    <p class="text-sm text-gray-400 mb-4">
+                        "The communication from this agency was flawless. They’re responsive and proactive."
+                    </p>
+                    <div class="flex items-center">
+                        <img class="h-10 w-10 rounded-full object-cover"
+                            src="https://placehold.co/100x100/333/fff?text=AB" alt="Anna Black">
+                        <div class="ml-3">
+                            <p class="text-sm font-semibold">Anna Black</p>
+                            <p class="text-xs text-gray-400">Marketing Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+              
+            </div>
+                <div class="flex space-x-4 mt-4 md:hidden">
+                    <button  class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button  class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+        </section>
+
+     
+    </main>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(({
+            duration: 1000,
+            once: true
+        }));
+        const openbtn = document.querySelector(".openbtn");
+        const menulist = document.querySelector(".menulist");
+        const contract = document.querySelector(".contract");
+
+        openbtn.addEventListener("click", () => {
+            menulist.classList.toggle("hidden");
+            contract.classList.toggle("hidden");
+        });
+
+     
+    </script>
+
+
+</body>
+
+</html>
