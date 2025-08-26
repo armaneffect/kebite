@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Testimonial Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        /* Optional: Custom styling for the page background */
+        body {
+            background-color: #121212;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        /* Styling for the custom navigation buttons */
+        .custom-prev, .custom-next {
+            transition: background-color 0.3s ease;
+        }
+        .custom-prev:hover, .custom-next:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="w-full max-w-screen-2xl mx-auto">
+
+    <swiper-container 
+        class="mySwiper w-full p-6 md:py-12"
+        autoplay="true"
+        navigation-next-el=".custom-next"
+        navigation-prev-el=".custom-prev"
+        centered-slides="true"
+        pagination="false"
+        observer="true"
+        observe-parents="true"
+        breakpoints='{
+            "320": { "slidesPerView": 1, "spaceBetween": 30 },
+            "640": { "slidesPerView": 2, "spaceBetween": 30 },
+            "1024": { "slidesPerView": 3, "spaceBetween": 30 },
+            "1280": { "slidesPerView": 4, "spaceBetween": 30 }
+        }'
+    >
+        <swiper-slide>
+            <div class="p-6 bg-[#282828] shadow-lg text-left rounded-lg">
+                <h4 class="font-bold text-white text-2xl md:text-3xl leading-snug mb-2">
+                    Unparalleled Communication
+                </h4>
+                <p class="text-md text-[#C8C8C8] my-5">
+                    “Their team was always available and kept us in the loop at every stage. The level of transparency was unlike any other firm we've worked with.”
+                </p>
+                <div class="flex items-center mt-auto">
+                    <img class="h-16 w-16 rounded-full object-cover" src="https://placehold.co/100x100/333/fff?text=MB" alt="Michael Brown">
+                    <div class="ml-3">
+                        <p class="text-xl text-white font-semibold">Michael Brown</p>
+                        <p class="text-xs text-[#C8C8C8]">Senior Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+
+        <swiper-slide>
+            <div class="p-6 bg-[#282828] shadow-lg text-left rounded-lg">
+                <h4 class="font-bold text-white text-2xl md:text-3xl leading-snug mb-2">
+                    Expertise That Drives Results
+                </h4>
+                <p class="text-md text-[#C8C8C8] my-5">
+                    “The deep industry knowledge they brought to the table was a game-changer. We saw a tangible impact on our bottom line within the first quarter.”
+                </p>
+                <div class="flex items-center mt-auto">
+                    <img class="h-16 w-16 rounded-full object-cover" src="https://placehold.co/100x100/333/fff?text=JS" alt="Jessica Smith">
+                    <div class="ml-3">
+                        <p class="text-xl text-white font-semibold">Jessica Smith</p>
+                        <p class="text-xs text-[#C8C8C8]">Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+
+        <swiper-slide>
+            <div class="p-6 bg-[#282828] shadow-lg text-left rounded-lg">
+                <h4 class="font-bold text-white text-2xl md:text-3xl leading-snug mb-2">
+                    A True Partner in Growth
+                </h4>
+                <p class="text-md text-[#C8C8C8] my-5">
+                    “They felt like an extension of our own team. Their commitment to our success was evident in everything they did. We couldn't have asked for a better partner.”
+                </p>
+                <div class="flex items-center mt-auto">
+                    <img class="h-16 w-16 rounded-full object-cover" src="https://placehold.co/100x100/333/fff?text=DL" alt="David Lee">
+                    <div class="ml-3">
+                        <p class="text-xl text-white font-semibold">David Lee</p>
+                        <p class="text-xs text-[#C8C8C8]">CEO, Tech Innovators</p>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+
+        <swiper-slide>
+            <div class="p-6 bg-[#282828] shadow-lg text-left rounded-lg">
+                <h4 class="font-bold text-white text-2xl md:text-3xl leading-snug mb-2">
+                    Seamless and Efficient
+                </h4>
+                <p class="text-md text-[#C8C8C8] my-5">
+                    “The entire process was incredibly smooth. They handled all the complexities, allowing us to focus on our core business operations.”
+                </p>
+                <div class="flex items-center mt-auto">
+                    <img class="h-16 w-16 rounded-full object-cover" src="https://placehold.co/100x100/333/fff?text=EW" alt="Emily Wang">
+                    <div class="ml-3">
+                        <p class="text-xl text-white font-semibold">Emily Wang</p>
+                        <p class="text-xs text-[#C8C8C8]">Operations Director</p>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+        
+        <swiper-slide>
+            <div class="p-6 bg-[#282828] shadow-lg text-left rounded-lg">
+                <h4 class="font-bold text-white text-2xl md:text-3xl leading-snug mb-2">
+                    Beyond Expectations
+                </h4>
+                <p class="text-md text-[#C8C8C8] my-5">
+                    “We had high expectations, and they managed to exceed every single one. The final product was polished, professional, and delivered ahead of schedule.”
+                </p>
+                <div class="flex items-center mt-auto">
+                    <img class="h-16 w-16 rounded-full object-cover" src="https://placehold.co/100x100/333/fff?text=CA" alt="Chris Anderson">
+                    <div class="ml-3">
+                        <p class="text-xl text-white font-semibold">Chris Anderson</p>
+                        <p class="text-xs text-[#C8C8C8]">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+
+    </swiper-container>
+
+    <div class="flex justify-center mt-8 space-x-4">
+      <button class="custom-prev p-3 bg-white/20 rounded-full text-white">Prev</button>
+      <button class="custom-next p-3 bg-white/20 rounded-full text-white">Next</button>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+</html>

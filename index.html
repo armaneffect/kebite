@@ -50,16 +50,17 @@
             </div>
 
             <ul
-                class="lg:flex hidden menulist lg:space-y-0 absolute lg:relative bg-[#101010]  lg:border-0 border-t w-full lg:w-auto  z-10 space-y-4  inter pl-2 lg:my-0 my-4 space-x-12">
+                class="lg:flex hidden menulist lg:space-y-0 p-5 lg:p-0 absolute lg:relative bg-[#101010]  lg:border-0 border-t w-full lg:w-auto  z-10 space-y-4  inter pl-2 lg:my-0 my-4 space-x-12">
                 <li><a href="#about" class="text-white text-sm">About Us</a></li>
                 <li><a href="#services" class="text-white text-sm">Services</a></li>
                 <li><a href="#projects" class="text-white text-sm">Projects</a></li>
                 <li><a href="#projects" class="text-white text-sm">Pricing</a></li>
                 <li><a href="#projects" class="text-white text-sm">Pages</a></li>
-                <li><a href="#contact"
-                        class="bg-white text-sm  font-medium text-black px-4 py-2 font-inter lg:hidden ">Contact <span
-                            class="ml-2">→</span></a>
+                <li><a href="#contact" class="py-3 px-4 main-button text-sm inter font-bold inline-flex items-center hover:scale-105 transition-all
+                duration-300 lg:hidden">Contact <span class="ml-2">→</span></a>
                 </li>
+
+
             </ul>
             <div class="flex items-center space-x-4">
 
@@ -68,8 +69,8 @@
                     <i class="fas fa-shopping-cart inline-block mr-2"></i>cart
                 </button>
                 <!-- Contract Button with a simple arrow emoji -->
-                <button
-                    class="bg-white text-sm contract-btn font-medium text-black px-4 py-2 hidden lg:block  hover:bg-[#4C4C4C] hover:text-white transition-colors">
+                <button class="py-3 px-8 main-button text-sm inter font-bold lg:flex items-center hidden hover:scale-105 transition-all
+                duration-300 ">
                     Contract <span class="ml-2">→</span>
                 </button>
             </div>
@@ -77,17 +78,17 @@
 
 
         <div class="max-w-7xl mx-auto px-4 pt-2 mt-5">
-            <h1
+            <h1 data-aos="fade-right"
                 class="text-5xl md:text-[90px]  lg:text-[180px] poppins-medium font-poppins font-bold text-white leading-none uppercase">
                 We’re
             </h1>
-            <h1
+            <h1 data-aos="fade-up"
                 class="text-5xl md:text-[90px] lg:text-[180px] poppins-medium font-poppins font-bold text-white text-end leading-none uppercase">
                 Creative
             </h1>
         </div>
 
-        <div data-aos="fade-up" data-aos-offset="400"
+        <div data-aos="fade-up"
             class="max-w-7xl mx-auto px-4 pt-2 mt-5 flex flex-col md:flex-row justify-between  items-center space-y-6 lg:space-y-0">
             <ul class="uppercase min-w-32 md:block hidden">
                 <li class="text-white text-md poppins-semibold font-bold"><span class="text-[#9F9F9F]">Grow </span>Your
@@ -130,7 +131,7 @@
             </ul>
         </div>
 
-        <div class="px-4 pt-10">
+        <div data-aos="fade-up" class="px-4 pt-10">
             <h1
                 class="text-4xl md:text-[90px] lg:text-[170px] poppins-medium py-4 tracking-tighter font-poppins space-x-0 text-center font-bold text-white  leading-none uppercase">
                 Design Studio
@@ -156,15 +157,14 @@
         <section class="max-w-7xl mx-auto px-4  md:py-8">
             <div class="flex flex-col lg:flex-row gap-12">
                 <!-- Image column -->
-                <div data-aos="fade-right" data-aos-offset="400" class="w-full lg:max-w-xl overflow-hidden ">
+                <div data-aos="fade-right" class="w-full lg:max-w-xl overflow-hidden ">
                     <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6989be5817084b84deee7_thumb-2-p-2000.webp"
                         alt="Team working together" class="w-full h-auto object-cover">
                 </div>
 
 
                 <!-- Content column -->
-                <div data-aos="fade-up" data-aos-offset="400" data-aos="fade-up" data-aos-offset="400"
-                    class="w-full lg:w-1/2 inter text-left h-full flex flex-col  justify-between">
+                <div data-aos="fade-up" class="w-full lg:w-1/2 inter text-left h-full flex flex-col  justify-between">
                     <p class="text-base md:text-lg my-auto text-gray-600 mb-16">
                         We specialize in crafting unique solutions that help brands make their mark.
                         By combining creativity with strategy, we deliver designs that stand out in
@@ -187,8 +187,7 @@
                     </div>
 
                     <div class="lg:mt-12 mt-2 md:mt-4">
-                        <button
-                            class="px-6 py-2   bg-gray-800 text-white font-bold shadow-lg  transition-colors">
+                        <button class="px-6 py-2   bg-gray-800 text-white font-bold shadow-lg  transition-colors">
                             About us →
                         </button>
                     </div>
@@ -200,7 +199,7 @@
 
         <!-- Enhancing Brands Section -->
         <section class="container mx-auto px-4 py-16 md:py-24 text-center">
-            <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            <div data-aos-easing="ease-in-sine"
                 class="max-w-7xl mx-auto px-4 pt-2 mt-5 flex flex-col md:flex-row justify-between  items-center space-y-6 lg:space-y-0">
                 <ul class="uppercase min-w-32">
                     <li class="text-[#282123] text-md poppins-semibold font-bold "><span
@@ -234,18 +233,19 @@
                 <!-- Left Side (Sticky Content) -->
                 <div class="lg:sticky md:top-20 self-start">
                     <span class="text-sm font-medium text-gray-400 tracking-widest uppercase">OUR SERVICES</span>
-                    <h2 class="text-2xl md:text-5xl lg:text-7xl poppins-semibold font-extrabold text-white my-4">
+                    <h2 data-aos="fade-up"
+                        class="text-2xl md:text-5xl lg:text-7xl poppins-semibold font-extrabold text-white my-4">
                         UNCOVER OUR <br>
                         <span class="text-gray-500">CAPABILITIES</span>
                     </h2>
-                    <p class="text-base text-gray-400 max-w-2xl mb-12">
+                    <p data-aos="fade-up" class="text-base text-gray-400 max-w-2xl mb-12">
                         Inventore numquam colo. Recusandae debilito defessus coaegresco comitibo accendo. Magnam non
                         antiquis cinis bos arguo ancilla.
                     </p>
                 </div>
 
                 <!-- Right Side (Services List) -->
-                <div class="grid grid-cols-1 gap-8">
+                <div data-aos="fade-up" class="grid grid-cols-1 gap-8">
                     <!-- Service Item 1 -->
                     <div data-aos="fade-up"
                         class="flex items-start gap-4 lg:max-w-[500px] p-6 border-b border-gray-800">
@@ -343,58 +343,200 @@
 
         <!-- Recent Projects Section -->
         <section class="max-w-7xl mx-auto px-4 py-16 md:py-24">
-            <span class="text-sm font-medium text-gray-500 tracking-widest uppercase text-center block">RECENT
-                PROJECTS</span>
-            <h2 class="text-2xl md:text-5xl lg:text-6xl poppins-semibold font-extrabold text-gray-800 my-4 text-center">
-                SHOWCASE OF <br><span class="text-gray-500">EXCELLENCE</span>
-            </h2>
-            <p class="text-base text-gray-600 max-w-2xl mx-auto text-center mb-12">
-                Ullam ipsam cenaculum carbo causa umerus vulnius deripio ut. Acerbitas tumultus atrox tumultus usus.
-                Vinum curia supplanto.
-            </p>
+            <div data-aos="fade-up" class="mb-12">
+                <span class="text-sm font-medium text-gray-500 tracking-widest uppercase text-center block">RECENT
+                    PROJECTS</span>
+                <h2
+                    class="text-2xl md:text-5xl lg:text-6xl poppins-semibold font-extrabold text-gray-800 my-4 text-center">
+                    SHOWCASE OF <br><span class="text-gray-500">EXCELLENCE</span>
+                </h2>
+                <p class="text-base text-gray-600 max-w-2xl mx-auto text-center mb-12">
+                    Ullam ipsam cenaculum carbo causa umerus vulnius deripio ut. Acerbitas tumultus atrox tumultus usus.
+                    Vinum curia supplanto.
+                </p>
+            </div>
+
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-
-
-                <!-- Project Item 1 -->
-                <div class="text-start group">
-                    <!-- Image wrapper relative করা হলো -->
+                <div data-aos="fade-up" class="text-start group">
                     <div class="mb-4 overflow-hidden relative">
                         <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980defc6abe066dfabeaa_banner-5-p-2000.webp"
                             alt="Mockup of a sign"
-                            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
 
-                        <!-- Overlay button -->
                         <button
                             class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
                             View Project <span class="ml-2">→</span>
                         </button>
                     </div>
 
-                    <!-- Content -->
-                    <h3 class="md:text-2xl text-xl font-bold text-gray-800">Boldstream</h3>
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">Boldstream</h3>
                     <p class="text-gray-500">
                         Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
                         compono agnosco.
                     </p>
                 </div>
-                <!-- Project Item 1 -->
-                <div class="text-start group">
-                    <!-- Image wrapper relative করা হলো -->
-                    <div class="mb-4 overflow-hidden relative">
-                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980defc6abe066dfabeaa_banner-5-p-2000.webp"
-                            alt="Mockup of a sign"
-                            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
 
-                        <!-- Overlay button -->
+                <div data-aos="fade-up" class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c9807de7ac96681b3c83e9_thumb-2.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
                         <button
                             class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
                             View Project <span class="ml-2">→</span>
                         </button>
                     </div>
 
-                    <!-- Content -->
-                    <h3 class="md:text-2xl text-xl font-bold text-gray-800">Boldstream</h3>
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">InnovateX</h3>
+                    <p class="text-gray-500">
+                        Apostolus derideo ater amiculum ambitus caritas charisma virtus timor. Corrumpo eaque decor
+                        accedo patrocinor desparatus sopor color ubi communis.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c9809e5dad7da53a1b3df8_thumb-3.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">PixelForge</h3>
+                    <p class="text-gray-500">
+                        Triduana curis asperiores spero truculenter dapifer abutor cubitum nobis vitium. Tracto clibanus
+                        solus accusamus attero vacuus decipio debilito.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980b7befddfe9bdb29126_thumb-4.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">SyncCraft</h3>
+                    <p class="text-gray-500">
+                        Vigilo via tum aequus apparatus administratio audeo caelestis vere. Tergum crux tergum arma
+                        desolo timidus adstringo arca truculenter.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980db91af879ebf7ccfc6_thumb-5.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">Cipherworks</h3>
+                    <p class="text-gray-500">
+                        Tumultus perferendis caput pecco defessus trepide depereo chirographum. Abstergo voluntarius est
+                        aptus tres modi.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c980f5e856a4883408bf03_thumb-6.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">NextWave</h3>
+                    <p class="text-gray-500">
+                        Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
+                        compono agnosco.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c981142681984c28a4a26d_thumb-7.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">CoreVision
+                    </h3>
+                    <p class="text-gray-500">
+                        Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
+                        compono agnosco.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c98131d96d94596c3960c0_thumb-8.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">NovaEdge</h3>
+                    <p class="text-gray-500">
+                        Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
+                        compono agnosco.
+                    </p>
+                </div>
+
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c9815016b7951d64a88b9a_thumb-9.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">InnoVista</h3>
+                    <p class="text-gray-500">
+                        Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
+                        compono agnosco.
+                    </p>
+                </div>
+                <div class="text-start group">
+                    <div class="mb-4 overflow-hidden relative">
+                        <img src="https://cdn.prod.website-files.com/67c95a691b4549c771f069e7/67c981736dac4dc4bac18714_thumb-10.webp"
+                            alt="Mockup of a sign"
+                            class="w-full h-72 md:h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-300">
+
+                        <button
+                            class="absolute inset-0 m-auto h-fit w-fit opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-black rounded shadow-md hover:bg-[#0C0407] hover:text-white transition duration-300">
+                            View Project <span class="ml-2">→</span>
+                        </button>
+                    </div>
+
+                    <h3 class="md:text-3xl inter text-xl font-bold text-gray-800">SpectraShift</h3>
                     <p class="text-gray-500">
                         Curso adcidue demonstro traho vacuus celeberer similique delinquo. Cotidie vehemens deludo cras
                         compono agnosco.
@@ -405,9 +547,9 @@
         </section>
 
         <!-- Our Client Reviews Section -->
-        <section class="text-center bg-[#101010] relative overflow-hidden p-8">
+        <section class="text-center bg-[#101010] relative overflow-hidden p-2 md:p-8 lg:p-10">
             <div class="flex p-4 justify-between items-end mt-2 max-w-7xl mx-auto">
-                <div class="text-left md:text-left lg:pl-4 pt-10">
+                <div data-aos="fade-up" class="text-left md:text-left lg:pl-4 pt-10">
                     <span class="text-xs tracking-widest inter p-2 text-white uppercase">Testimonial</span>
                     <h2
                         class="lg:text-4xl text-xl md:text-5xl lg:text-7xl poppins-semibold font-extrabold text-white my-4 uppercase">
@@ -415,13 +557,13 @@
                     </h2>
                 </div>
                 <div class="flex space-x-4 mt-4 md:mt-0 hidden md:flex">
-                    <button id="prevBtn" class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                    <button class="p-4 custom-prev bg-white/10  hover:bg-white/20 transition-colors">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                             </path>
                         </svg>
                     </button>
-                    <button id="nextBtn" class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                    <button class="p-4 custom-next bg-white/10  hover:bg-white/20 transition-colors">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
@@ -431,77 +573,119 @@
             </div>
 
             <!-- Slider Container -->
-            <div id="testimonialSlider"
-                class="mt-8 flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-4  ">
 
-                <!-- Testimonial 1 -->
-                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-lg snap-center">
-                    <h4 class="font-bold text-white text-3xl mb-2">Unparalleled Communication and Commitment to Success
-                    </h4>
-                    <p class="text-md text-[#C8C8C8] my-8">“Virgo atrocitas contra suggero tui astrum id celo copia
-                        ventus. Itaque sursum voluptatem modi sapiente vinitor maxime conqueror. Angustus terminatio
-                        demum tubineus conventus sub. Subvenio verecundia.”
-                    </p>
-                    <div class="flex items-center">
-                        <img class="h-16 w-16 rounded-full object-cover"
-                            src="https://placehold.co/100x100/333/fff?text=MB" alt="Michael Brown">
-                        <div class="ml-3">
-                            <p class="text-xl text-white font-semibold">Michael Brown</p>
-                            <p class="text-xs text-[#C8C8C8]">Senior Consultant</p>
+
+            <div data-aos="fade-up" class="w-full max-w-screen-2xl mx-auto">
+                <swiper-container class="mySwiper w-full p-6 md:py-12" autoplay="true" navigation-next-el=".custom-next"
+                    navigation-prev-el=".custom-prev" centered-slides="true" pagination="false" observer="true"
+                    observe-parents="true" space-between="20" breakpoints='{
+        "320": { "slidesPerView": 1, "spaceBetween": 20 },
+        "640": { "slidesPerView": 2, "spaceBetween": 20 },
+        "1024": { "slidesPerView": 2, "spaceBetween": 20 },
+        "1280": { "slidesPerView": 3, "spaceBetween": 20 }
+    }'>
+                    <swiper-slide>
+                        <div class="p-6 bg-[#282828] shadow-lg flex flex-col w-full text-left ">
+                            <h4  class="font-bold text-white inter text-2xl md:text-3xl leading-snug mb-2">
+                                Unparalleled Communication and Commitment to Success
+                            </h4>
+                            <p  class="text-md text-[#C8C8C8] my-5">
+                                “The level of communication and collaboration we experienced while working with this
+                                agency was unparalleled. They were not only responsive but also proactive providing us
+                                with regular updates.”
+                            </p>
+                            <div class="flex items-center mt-auto">
+                                <img class="h-16 w-16 rounded-full object-cover"
+                                    src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6b64295fbc0d680b37110_author-1.webp"
+                                    alt="Michael Brown">
+                                <div class="ml-3">
+                                    <p class="text-xl text-white font-semibold">Emily Johnson</p>
+                                    <p class="text-xs text-[#C8C8C8]">Data Analytics Manager</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Testimonial 1 -->
-                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-lg snap-center">
-                    <h4 class="font-bold text-white text-3xl mb-2">Unparalleled Communication and Commitment to Success
-                    </h4>
-                    <p class="text-md text-[#C8C8C8] my-8">“Virgo atrocitas contra suggero tui astrum id celo copia
-                        ventus. Itaque sursum voluptatem modi sapiente vinitor maxime conqueror. Angustus terminatio
-                        demum tubineus conventus sub. Subvenio verecundia.”
-                    </p>
-                    <div class="flex items-center">
-                        <img class="h-16 w-16 rounded-full object-cover"
-                            src="https://placehold.co/100x100/333/fff?text=MB" alt="Michael Brown">
-                        <div class="ml-3">
-                            <p class="text-xl text-white font-semibold">Michael Brown</p>
-                            <p class="text-xs text-[#C8C8C8]">Senior Consultant</p>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="p-6 bg-[#282828] shadow-lg flex flex-col w-full text-left ">
+                            <h4 class="font-bold text-white inter text-2xl md:text-3xl leading-snug mb-2">
+                                A True Extension of Our Business and Vision
+                            </h4>
+                            <p class="text-md text-[#C8C8C8] my-5">
+                                “The team went above and beyond to deliver a website that exceeded our expectations.
+                                Their attention to detail and commitment to quality made all the difference seen a
+                                significant increase!”
+                            </p>
+                            <div class="flex items-center mt-auto">
+                                <img class="h-16 w-16 rounded-full object-cover"
+                                    src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6b7abe67bc20c393b52f4_author-2.webp"
+                                    alt="Michael Brown">
+                                <div class="ml-3">
+                                    <p class="text-xl text-white font-semibold">Michael Brown</p>
+                                    <p class="text-xs text-[#C8C8C8]">Senior Consultant</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Testimonial 1 -->
-                <div class="p-6 bg-[#282828]  shadow-lg text-left min-w-[300px] max-w-lg snap-center">
-                    <h4 class="font-bold text-white text-3xl mb-2">Unparalleled Communication and Commitment to Success
-                    </h4>
-                    <p class="text-md text-[#C8C8C8] my-8">“Virgo atrocitas contra suggero tui astrum id celo copia
-                        ventus. Itaque sursum voluptatem modi sapiente vinitor maxime conqueror. Angustus terminatio
-                        demum tubineus conventus sub. Subvenio verecundia.”
-                    </p>
-                    <div class="flex items-center">
-                        <img class="h-16 w-16 rounded-full object-cover"
-                            src="https://placehold.co/100x100/333/fff?text=MB" alt="Michael Brown">
-                        <div class="ml-3">
-                            <p class="text-xl text-white font-semibold">Michael Brown</p>
-                            <p class="text-xs text-[#C8C8C8]">Senior Consultant</p>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="p-6 bg-[#282828] shadow-lg flex flex-col w-full text-left ">
+                            <h4 class="font-bold text-white inter text-2xl md:text-3xl leading-snug mb-2">
+                                Seamless Collaboration that Exceeds Expectations
+                            </h4>
+                            <p class="text-md text-[#C8C8C8] my-5">
+                                “Their team didn’t just take the project on; they became an integral extension of our
+                                business. From the very beginning, they immersed themselves in our brand From start to
+                                responsive.”
+                            </p>
+                            <div class="flex items-center mt-auto">
+                                <img class="h-16 w-16 rounded-full object-cover"
+                                    src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6b7abba1ffeb9f2449c8e_author-3.webp"
+                                    alt="Michael Brown">
+                                <div class="ml-3">
+                                    <p class="text-xl text-white font-semibold">Sarah Davis</p>
+                                    <p class="text-xs text-[#C8C8C8]">Robotics Engineer</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Testimonial 1 -->
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="p-6 bg-[#282828] shadow-lg flex flex-col w-full text-left ">
+                            <h4 class="font-bold text-white inter text-2xl md:text-3xl leading-snug mb-2">
+                                An Effortless Experience from Start to Finish
+                            </h4>
+                            <p class="text-md text-[#C8C8C8] my-5">
+                                “Virgo atrocitas contra suggero tui astrum id celo copia ventus. Itaque sursum
+                                voluptatem modi sapiente vinitor maxime conqueror. Angustus terminatio demum tubineus
+                                conventus sub. Subvenio verecundia.”
+                            </p>
+                            <div class="flex items-center mt-auto">
+                                <img class="h-16 w-16 rounded-full object-cover"
+                                    src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6b7aa746fd9e19bdb364c_author-4.webp"
+                                    alt="Michael Brown">
+                                <div class="ml-3">
+                                    <p class="text-xl text-white font-semibold">James Wilson
+
+                                    </p>
+                                    <p class="text-xs text-[#C8C8C8]">Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
 
 
 
-
+                </swiper-container>
 
 
 
             </div>
-            <div class="flex space-x-4 mt-4 md:hidden">
-                <button class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+            <div class="flex ml-4 space-x-4 mt-4 md:hidden">
+                <button class="p-4 custom-prev bg-white/10  hover:bg-white/20 transition-colors">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                         </path>
                     </svg>
                 </button>
-                <button class="p-4 bg-white/10  hover:bg-white/20 transition-colors">
+                <button class="p-4 custom-next bg-white/10  hover:bg-white/20 transition-colors">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                         </path>
@@ -510,20 +694,21 @@
             </div>
 
 
-            <section class=" bg-[#101010] px-4 py-16 md:py-24">
+            <section class=" bg-[#101010] px-2 py-16 md:py-24">
                 <span class="text-xs tracking-widest text-gray-500 uppercase">Pricing Plan</span>
-                <h2 class="mt-2 text-2xl md:text-4xl lg:text-7xl poppins-medium font-black tracking-tighter">
+                <h2 data-aos="fade-up" class="mt-2 text-2xl md:text-4xl lg:text-7xl poppins-medium font-black tracking-tighter">
                     <span class="text-[#707070]">CUSTOMIZABLE</span><br>
                     <span class="text-white">PRICING OPTIONS</span>
                 </h2>
-                <p class="mt-6 text-gray-400 max-w-2xl mx-auto">
+                <p data-aos="fade-up" class="mt-6 text-gray-400 max-w-2xl mx-auto">
                     Discover how we unlock the full potential of your brand with our comprehensive <br
                         class="hidden md:block" /> suite of digital
                     marketing solutions.
                 </p>
-                <div class="mt-16 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="fade-up" class="mt-16 max-w-7xl mx-auto grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Pricing Card 1 -->
-                    <div class="bg-[#282828] p-8 shadow-xl flex flex-col justify-between">
+                    <div
+                        class="bg-[#282828] hover:bg-[#404040]  transition-colors duration-300  p-2 md:p-4 lg:p-10 shadow-xl flex flex-col justify-between">
                         <div>
                             <div class="flex gap-6 items-center mb-4">
                                 <h3 class="text-2xl text-white font-bold">Full-Package</h3>
@@ -534,7 +719,7 @@
                             <h2 class="text-white text-lg my-5 text-start md:text-xl lg:text-2xl font-bold">
                                 Tailored Services for <span class="text-[#C8C8C8] block">Large Enterprises</span>
                             </h2>
-                            <p class="text-[24px] font-bold text-white text-start mb-8">
+                            <p class="text-[24px] font-bold text-white text-start my-8">
                                 $8,500.00 USD<span class="text-lg font-normal text-gray-400">/mo</span>
                             </p>
 
@@ -562,10 +747,11 @@
                     </div>
 
                     <!-- Pricing Card 2 -->
-                    <div class="bg-[#282828] p-8 shadow-xl flex flex-col justify-between">
+                    <div
+                        class="bg-[#282828] hover:bg-[#404040] transition-colors duration-300 p-2 md:p-4 lg:p-10 shadow-xl flex flex-col justify-between">
                         <div>
                             <div class="flex gap-6 items-center mb-4">
-                                <h3 class="text-2xl text-white font-bold">Professional</h3>
+                                <h3  class="text-2xl text-white font-bold">Professional</h3>
                                 <span
                                     class="bg-[#3E3E3E] text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">Big
                                     Projects</span>
@@ -573,7 +759,7 @@
                             <h2 class="text-white text-lg my-5 text-start md:text-xl lg:text-2xl font-bold">
                                 Excellent for <span class="text-[#C8C8C8] block">Growing Enterprises</span>
                             </h2>
-                            <p class="text-[24px] font-bold text-white text-start mb-8">
+                            <p class="text-[24px] font-bold text-white text-start my-8">
                                 $6,500.00 USD<span class="text-lg font-normal text-gray-400">/mo</span>
                             </p>
 
@@ -601,7 +787,8 @@
                     </div>
 
                     <!-- Pricing Card 3 -->
-                    <div class="bg-[#282828] p-8 shadow-xl flex flex-col justify-between">
+                    <div
+                        class="bg-[#282828] p-2 md:p-4 hover:bg-[#404040] transition-colors duration-300 lg:p-10 shadow-xl flex flex-col justify-between">
                         <div>
                             <div class="flex gap-6 items-center mb-4">
                                 <h3 class="text-2xl text-white font-bold">Starter</h3>
@@ -612,7 +799,7 @@
                             <h2 class="text-white text-lg my-5 text-start md:text-xl lg:text-2xl font-bold">
                                 Perfect for <span class="text-[#C8C8C8] block">New Businesses</span>
                             </h2>
-                            <p class="text-[24px] font-bold text-white text-start mb-8">
+                            <p class="text-[24px] font-bold text-white text-start my-8">
                                 $4,500.00 USD<span class="text-lg font-normal text-gray-400">/mo</span>
                             </p>
 
@@ -640,76 +827,363 @@
                     </div>
                 </div>
 
-           <div class="mt-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 p-10 rounded-3xl shadow-xl flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
-    
-    <!-- Heading -->
-    <h3 class="text-white text-2xl md:text-4xl font-bold leading-snug text-center md:text-left max-w-2xl">
-        🚀 Want a unique solution tailored just for you?
-    </h3>
+                <div
+                    class="mt-8 max-w-7xl mx-auto p-4 md:p-8  bg-[#282828] lg:flex  lg:justify-between items-center gap-6 md:gap-10">
 
-    <!-- Buttons -->
-    <div class="flex space-x-4">
-        <!-- Primary Button -->
-        <button
-            class="py-3 px-8 bg-white text-black rounded-xl font-semibold flex items-center shadow-lg hover:scale-105 hover:bg-gray-100 transition-all duration-300">
-            Book a Call
-            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-        </button>
+                    <!-- Heading -->
+                    <h3 class="text-white lg:text-2xl text-xl  font-bold leading-snug  text-left max-w-2xl">
+                        Want a unique solution tailored just for you?
+                    </h3>
 
-        <!-- Secondary Button -->
-        <button
-            class="py-3 px-8 bg-gray-700 text-white rounded-xl font-semibold flex items-center hover:bg-gray-600 hover:scale-105 transition-all duration-300">
-            Get Started
-            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-        </button>
-    </div>
-</div>
+                    <!-- Buttons -->
+                    <div class="flex space-x-4 mt-6 lg:mt-0">
+                        <!-- Primary Button -->
+                        <button
+                            class="py-3 px-8 main-button text-sm inter font-bold flex items-center  hover:scale-105 transition-all duration-300">
+                            Book a Call
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <!-- Secondary Button -->
+                        <button
+                            class="py-3 md:px-8  px-2 btn12 bg-[#535353] text-sm inter font-bold flex items-center shadow-lg hover:scale-105 transition-all duration-300">
+                            Get Started
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
 
 
             </section>
 
+        </section>
 
+        <!-- Our Latest Clients Section -->
+        <section class="text-center bg-white px-2 py-16 md:py-24">
+            <span class="text-xs tracking-widest text-gray-500 uppercase">Featured Clients</span>
+            <h2 data-aos="fade-up"
+                class="mt-2 text-6xl md:text-[80px] mt-4 uppercase poppins-medium text-black font-black tracking-tighter">
+                OUR <span class="text-gray-500">LATEST</span>
+                CLIENTS
+            </h2>
+            <div data-aos="fade-up" class="mt-12 max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Client Logos (Placeholder SVG) -->
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c450027a96b70dbac2fb_brand-1.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c4503537ff4e34aa606d_brand-2.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c45150863133971c9d48_brand-3.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c452c5b03af6da25fdf5_brand-10.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c453e67bc20c39484a0f_brand-9.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c453e67bc20c39484a0f_brand-9.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c452c5b03af6da25fdf5_brand-10.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c45225ef01c849c4ed24_brand-8.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c45225ef01c849c4ed24_brand-8.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
+                <div class="p-8 md:h-[220px] border border-gray-300  flex items-center justify-center">
+                    <img src="https://cdn.prod.website-files.com/67c2c8d0275133720093f23e/67c6c452027a96b70dbac526_brand-6.svg"
+                        alt="Client Logo" class="w-[150px] ">
+                </div>
 
+            </div>
+        </section>
 
+        <!-- Frequently Asked Questions Section -->
+        <section class=" bg-white ">
+            <div class="max-w-7xl mx-auto md:flex justify-between items-start gap-16 px-4 py-16 md:py-24">
+                <div>
+                    <span class="text-xs tracking-widest text-black inter  uppercase">FAQ</span>
+                    <h2
+                        class="mt-2 max-w-2xl text-4xl md:text-[80px] poppins-medium text-black uppercase font-black tracking-tighter">
+                        FREQUENTLY
+                        ASKED<br>
+                        <span class="text-[#999999]">QUESTION</span>
+                    </h2>
+                    <p class="mt-6 text-gray-400 max-w-lg">
+                        Patria arma verbera aperiam comptus. Versus cohaero adiuvu. Vocco alo ustilo talus nulla ambulo
+                        vero.
+                    </p>
+                </div>
+                <div class="space-y-4  inter mt-10 md:mt-0 md:flex-1">
+                    <!-- FAQ Item 1 -->
+                    <div class="border-b border-gray-200 pb-4 cursor-pointer" data-accordion="faq-item">
+                        <div class="flex justify-between items-center py-4">
+                            <h4 class="text-xl font-semibold text-black">How do I contact you for inquiries or
+                                collaborations?</h4>
+                            <span
+                                class="text-black text-2xl ml-2 font-bold transition-transform duration-300 transform rotate-0">+</span>
+                        </div>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-gray-400 pb-4">You can easily contact us through the 'Contact Us' button in
+                                the
+                                header or footer, or by clicking the 'Book a call' button in our pricing section. We
+                                look
+                                forward to hearing from you!</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="border-b border-gray-200 pb-4 cursor-pointer" data-accordion="faq-item">
+                        <div class="flex justify-between items-center py-4">
+                            <h4 class="text-xl font-semibold text-black">What services does your digital agency offer?
+                            </h4>
+                            <span
+                                class="text-black text-2xl ml-2 font-bold transition-transform duration-300 transform rotate-0">+</span>
+                        </div>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-gray-400 pb-4">We offer a full suite of digital services including custom
+                                website
+                                design, mobile-responsive development, API integrations, social media marketing, and
+                                ongoing
+                                maintenance. Our goal is to provide a complete solution tailored to your business needs.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="border-b border-gray-200 pb-4 cursor-pointer" data-accordion="faq-item">
+                        <div class="flex justify-between items-center py-4">
+                            <h4 class="text-xl font-semibold text-black">How long does it take to build a website?</h4>
+                            <span
+                                class="text-black text-2xl ml-2 font-bold transition-transform duration-300 transform rotate-0">+</span>
+                        </div>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-gray-400 pb-4">The timeline for a website project varies depending on the
+                                complexity and scope. A simple site might take a few weeks, while a complex e-commerce
+                                platform could take a few months. We'll provide a detailed project timeline after our
+                                initial consultation to set clear expectations.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="border-b border-gray-200 pb-4 cursor-pointer" data-accordion="faq-item">
+                        <div class="flex justify-between items-center py-4">
+                            <h4 class="text-xl font-semibold text-black">What is included in your digital marketing
+                                services?</h4>
+                            <span
+                                class="text-black text-2xl ml-2 font-bold transition-transform duration-300 transform rotate-0">+</span>
+                        </div>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-gray-400 pb-4">Our digital marketing services are comprehensive and include
+                                social media strategy, custom CMS setup, email marketing campaigns, and Google Analytics
+                                integration. We craft a unique strategy to help your brand grow and connect with its
+                                target
+                                audience.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="border-b border-gray-200 pb-4 cursor-pointer" data-accordion="faq-item">
+                        <div class="flex justify-between items-center py-4">
+                            <h4 class="text-xl font-semibold text-black">Can you create content for our social media
+                                accounts?</h4>
+                            <span
+                                class="text-black text-2xl ml-2 font-bold transition-transform duration-300 transform rotate-0">+</span>
+                        </div>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-gray-400 pb-4">Yes, absolutely! We specialize in creating unique, engaging
+                                content tailored to your brand's voice and goals. Our team can manage your social media
+                                accounts and develop a content calendar that resonates with your followers.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
 
+
+
+
+        <!-- Footer Section -->
+        <footer class="bg-[#0C0407]  pt-16 pb-2">
+            <div class="max-w-7xl mx-auto px-4">
+                <section class="sm:flex  justify-between items-center p-2 ">
+                    <h2 data-aos="fade-right"
+                        class="text-5xl flex-1 text-center sm:text-start md:text-8xl lg:text-[180px] uppercase poppins-semibold   font-black leading-none tracking-tighter text-white  mb-8 md:mb-0">
+                        Have any Project!
+                    </h2>
+                    <div
+                        class="relative hover:bg-white mx-auto   hover:scale-105 transition-all group transition-transform duration-300 md:w-[260px] md:h-[260px] rounded-full bg-[#282828] w-48  h-48 flex items-center justify-center cursor-pointer overflow-hidden">
+                        <span class="text-white text-sm group-hover:text-black font-semibold">Contact us<i
+                                class="fa-solid fa-arrow-up-right-from-square mx-2"></i></span>
+
+                    </div>
+                </section>
+
+
+                <div class="sm:flex gap-8 justify-between  mt-16 md:text-left">
+
+                    <div>
+                        <div data-aos="fade-up" class="col-span-1 md:col-span-2">
+                            <div class="text-white text-center sm:text-start text-2xl font-bold">Kebite</div>
+                            <p
+                                class="mt-4 text-md text-[#4D4749] text-center sm:text-start mx-auto text-[#969394] max-w-xs">
+                                We specialize in crafting unique solutions that help brands make their mark. By
+                                combining
+                                creativity with strategy.
+                            </p>
+                            <div class="flex mt-8 text-[#4D4749] space-x-4 text-white justify-center md:justify-start">
+                                <a href="#" class="hover:text-white hover:scale-110 transition-transform duration-300">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="hover:text-white hover:scale-110 transition-transform duration-300">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="hover:text-white hover:scale-110 transition-transform duration-300">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="hover:text-white hover:scale-110 transition-transform duration-300">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                                <a href="#" class="hover:text-white hover:scale-110 transition-transform duration-300">
+                                    <i class="fa-brands fa-behance"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-up"
+                            class="flex list sm:space-x-28 justify-evenly md:justify-start mt-8 sm:mt-0">
+
+                            <!-- Column 1 -->
+                            <div>
+
+                                <ul class="space-y-2 ">
+
+                                    <li><a href="#" class="text-white hover:underline">Projects</a></li>
+
+                                    <li><a href="#" class="text-white hover:underline">Services</a></li>
+                                    <li><a href="#" class="text-white hover:underline">About us</a></li>
+                                    <li><a href="#" class="text-white hover:underline">Pricing</a></li>
+                                    <li><a href="#" class="text-white hover:underline">Blog</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div>
+
+                                <ul class="space-y-2 ">
+                                    <li><a href="#" class="text-white hover:underline">Style Guide</a></li>
+                                    <li><a href="#" class="text-white hover:underline">Licenses</a></li>
+                                    <li><a href="#" class="text-white hover:underline">Changelog</a></li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <hr class="border-[#4D4749] mt-16">
+                <div data-aos="fade-up" class="m-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                    <p class="text-[16px] text-white font-medium">Designed by <a class="text-white underline"
+                            href="#">Mavenflow</a> </p>
+                    <p class="text-[16px] text-white font-medium">Copyright ©Kebite, All rights reserved </p>
+                    <p class="text-[16px]">Designed by <a href="#" class="text-white hover:underline"> Webflow</a></p>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init(({
+
+
+        AOS.init({
+            offset: 50, // default 120px, মান কমালে আগে ট্রিগার হবে
             duration: 1000,
             once: true
-        }));
+        });
+
         const openbtn = document.querySelector(".openbtn");
         const menulist = document.querySelector(".menulist");
         const contract = document.querySelector(".contract");
-        const nextBtn = document.getElementById("nextBtn");
-        const prevBtn = document.getElementById("prevBtn");
-
         openbtn.addEventListener("click", () => {
             menulist.classList.toggle("hidden");
             contract.classList.toggle("hidden");
         });
 
-        nextBtn.addEventListener("click", () => {
-            slider.scrollBy({ left: 320, behavior: "smooth" });
-        });
 
-        prevBtn.addEventListener("click", () => {
-            slider.scrollBy({ left: -320, behavior: "smooth" });
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('[data-accordion="faq-item"]');
 
+            faqItems.forEach(item => {
+                const header = item.querySelector('.flex');
+                const content = item.querySelector('.accordion-content');
+                const plusSign = item.querySelector('span');
+
+                header.addEventListener('click', () => {
+                    // Check if the content is open
+                    const isOpen = content.classList.contains('active');
+
+                    // Close all other open accordion items
+                    faqItems.forEach(otherItem => {
+                        const otherContent = otherItem.querySelector('.accordion-content');
+                        const otherPlusSign = otherItem.querySelector('span');
+
+                        if (otherContent !== content && otherContent.classList.contains('active')) {
+                            otherContent.classList.remove('active');
+                            otherContent.style.maxHeight = null;
+                            otherPlusSign.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle the clicked item
+                    if (isOpen) {
+                        content.classList.remove('active');
+                        content.style.maxHeight = null;
+                        plusSign.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.classList.add('active');
+                        // Set max height to the scroll height for smooth transition
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        plusSign.style.transform = 'rotate(45deg)';
+                    }
+                });
+            });
+        });
 
     </script>
 
