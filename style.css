@@ -18,6 +18,12 @@ header {
     font-weight: 400;
     font-style: normal;
 }
+.inter600 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
 
 .poppins-medium {
     font-family: "Poppins", sans-serif;
