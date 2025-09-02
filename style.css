@@ -11,6 +11,12 @@ header {
 
 }
 
+:placeholder-shown{
+  color: #9F9F9F;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 .inter {
     font-family: "Inter", sans-serif;
